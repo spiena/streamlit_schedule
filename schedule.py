@@ -60,6 +60,7 @@ if __name__ == "__main__":
             schedule_files = get_files(schedule_path, keyword=key_word_schedule)
             for i in range(len(schedule_files)):
                 f = schedule_files[i]
+                st.write(f)
                 schedule_file_progress_bar.progress((i + 1)/len(schedule_files), 'ヒア情報処理')
                 ctime, mtime = get_file_times(f)
                 
